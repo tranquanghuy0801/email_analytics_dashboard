@@ -1,0 +1,13 @@
+[2020-03-25 23:45:46,324] {dag_processing.py:821} INFO - Processing files using up to 1 processes at a time 
+[2020-03-25 23:45:46,325] {dag_processing.py:822} INFO - Process each file at most once every 0 seconds
+[2020-03-25 23:45:46,325] {dag_processing.py:824} INFO - Checking for new files in /Users/tranquanghuy/email_analytics_dashoard/airflow_dir/dags every 300 seconds
+[2020-03-25 23:45:46,328] {dag_processing.py:1292} INFO - Finding 'running' jobs without a recent heartbeat
+[2020-03-25 23:45:46,329] {dag_processing.py:1296} INFO - Failing jobs without heartbeat after 2020-03-25 13:40:46.329227+00:00
+[2020-03-25 23:45:47,064] {dag_processing.py:1029} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-----------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/Users/tranquanghuy/email_analytics_dashoard/airflow_dir/dags/upload_to_S3.py                           0           0  0.71s           2020-03-25T13:45:47
+================================================================================

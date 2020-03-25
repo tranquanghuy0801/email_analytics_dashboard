@@ -1,0 +1,7 @@
+[2020-03-25 23:45:46,356] {scheduler_job.py:153} INFO - Started process (PID=60145) to work on /Users/tranquanghuy/email_analytics_dashoard/airflow_dir/dags/upload_to_S3.py
+[2020-03-25 23:45:46,366] {scheduler_job.py:1560} INFO - Processing file /Users/tranquanghuy/email_analytics_dashoard/airflow_dir/dags/upload_to_S3.py for tasks to queue
+[2020-03-25 23:45:46,367] {logging_mixin.py:112} INFO - [2020-03-25 23:45:46,366] {dagbag.py:403} INFO - Filling up the DagBag from /Users/tranquanghuy/email_analytics_dashoard/airflow_dir/dags/upload_to_S3.py
+[2020-03-25 23:45:46,988] {scheduler_job.py:1572} INFO - DAG(s) dict_keys(['upload_s3']) retrieved from /Users/tranquanghuy/email_analytics_dashoard/airflow_dir/dags/upload_to_S3.py
+[2020-03-25 23:45:46,997] {logging_mixin.py:112} INFO - [2020-03-25 23:45:46,997] {dag.py:1485} INFO - Creating ORM DAG for upload_s3
+[2020-03-25 23:45:47,008] {scheduler_job.py:161} INFO - Processing /Users/tranquanghuy/email_analytics_dashoard/airflow_dir/dags/upload_to_S3.py took 0.652 seconds
+[2020-03-25 23:45:48,333] {scheduler_job.py:153} INFO - Started process (PID=60211) to work on /Users/tranquanghuy/email_analytics_dashoard/airflow_dir/dags/upload_to_S3.py
