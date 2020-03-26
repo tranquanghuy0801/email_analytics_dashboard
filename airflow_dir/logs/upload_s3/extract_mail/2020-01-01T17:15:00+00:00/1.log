@@ -1,0 +1,152 @@
+[2020-03-26 21:53:34,058] {taskinstance.py:655} INFO - Dependencies all met for <TaskInstance: upload_s3.extract_mail 2020-01-01T17:15:00+00:00 [queued]>
+[2020-03-26 21:53:34,082] {taskinstance.py:655} INFO - Dependencies all met for <TaskInstance: upload_s3.extract_mail 2020-01-01T17:15:00+00:00 [queued]>
+[2020-03-26 21:53:34,082] {taskinstance.py:866} INFO - 
+--------------------------------------------------------------------------------
+[2020-03-26 21:53:34,082] {taskinstance.py:867} INFO - Starting attempt 1 of 1
+[2020-03-26 21:53:34,082] {taskinstance.py:868} INFO - 
+--------------------------------------------------------------------------------
+[2020-03-26 21:53:34,100] {taskinstance.py:887} INFO - Executing <Task(PythonOperator): extract_mail> on 2020-01-01T17:15:00+00:00
+[2020-03-26 21:53:34,108] {standard_task_runner.py:53} INFO - Started process 48667 to run task
+[2020-03-26 21:53:34,220] {logging_mixin.py:112} INFO - Running %s on host %s <TaskInstance: upload_s3.extract_mail 2020-01-01T17:15:00+00:00 [running]> 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2020-03-26 21:53:38,180] {logging_mixin.py:112} INFO - OK [b'quanghuy.qut@gmail.com authenticated (Success)']
+[2020-03-26 21:53:38,589] {logging_mixin.py:112} INFO - Mailboxes:
+[2020-03-26 21:53:38,590] {logging_mixin.py:112} INFO - [b'(\\HasNoChildren) "/" "INBOX"', b'(\\HasChildren \\Noselect) "/" "[Gmail]"', b'(\\All \\HasNoChildren) "/" "[Gmail]/All Mail"', b'(\\Drafts \\HasNoChildren) "/" "[Gmail]/Drafts"', b'(\\HasNoChildren \\Important) "/" "[Gmail]/Important"', b'(\\HasNoChildren \\Sent) "/" "[Gmail]/Sent Mail"', b'(\\HasNoChildren \\Junk) "/" "[Gmail]/Spam"', b'(\\Flagged \\HasNoChildren) "/" "[Gmail]/Starred"', b'(\\HasNoChildren \\Trash) "/" "[Gmail]/Trash"']
+[2020-03-26 21:53:39,222] {logging_mixin.py:112} INFO - Processing mailbox...
+[2020-03-26 21:53:39,222] {logging_mixin.py:112} INFO - 
+[2020-03-26 21:53:39,724] {logging_mixin.py:112} INFO - 22
+[2020-03-26 21:53:40,647] {logging_mixin.py:112} WARNING - /Users/tranquanghuy/email_analytics_dashoard/airflow_dir/dags/upload_to_S3.py:21: UserWarning: No parser was explicitly specified, so I'm using the best available HTML parser for this system ("html.parser"). This usually isn't a problem, but if you run this code on another system, or in a different virtual environment, it may use a different parser and behave differently.
+
+The code that caused this warning is on line 21 of the file /Users/tranquanghuy/email_analytics_dashoard/airflow_dir/dags/upload_to_S3.py. To get rid of this warning, pass the additional argument 'features="html.parser"' to the BeautifulSoup constructor.
+
+  soup = BeautifulSoup(body)
+[2020-03-26 21:53:40,664] {logging_mixin.py:112} INFO - Message b'1': Your order with order ID 13835414 is confirmed
+[2020-03-26 21:53:40,664] {logging_mixin.py:112} INFO - Raw Date: Sat, 09 Sep 2017 10:21:25 +0000 (UTC)
+[2020-03-26 21:53:40,664] {logging_mixin.py:112} INFO - (2017, 9, 9, 10, 21, 25, 0, 1, -1, 0)
+[2020-03-26 21:53:40,665] {logging_mixin.py:112} INFO - Local Date: 09-Sep-2017
+[2020-03-26 21:53:40,665] {logging_mixin.py:112} INFO - Your order with order ID 13835414 is confirmed,"viagogo" <customerservice@orders.viagogo.com>,09-Sep-2017
+[2020-03-26 21:53:41,767] {logging_mixin.py:112} INFO - Message b'2': Re: Congrats! Code Camp Staff Portal
+[2020-03-26 21:53:41,768] {logging_mixin.py:112} INFO - Raw Date: Thu, 5 Oct 2017 12:26:32 +1100
+[2020-03-26 21:53:41,768] {logging_mixin.py:112} INFO - (2017, 10, 5, 12, 26, 32, 0, 1, -1, 39600)
+[2020-03-26 21:53:41,769] {logging_mixin.py:112} INFO - Local Date: 05-Oct-2017
+[2020-03-26 21:53:41,769] {logging_mixin.py:112} INFO - Re: Congrats! Code Camp Staff Portal,Ella Milech <ella@codecamp.com.au>,05-Oct-2017
+[2020-03-26 21:53:43,545] {logging_mixin.py:112} INFO - Message b'3': Download Your E-Tickets - Order 13835414
+[2020-03-26 21:53:43,545] {logging_mixin.py:112} INFO - Raw Date: Fri, 13 Oct 2017 13:39:16 +0000 (UTC)
+[2020-03-26 21:53:43,546] {logging_mixin.py:112} INFO - (2017, 10, 13, 13, 39, 16, 0, 1, -1, 0)
+[2020-03-26 21:53:43,546] {logging_mixin.py:112} INFO - Local Date: 13-Oct-2017
+[2020-03-26 21:53:43,546] {logging_mixin.py:112} INFO - Download Your E-Tickets - Order 13835414,"viagogo" <customerservice@orders.viagogo.com>,13-Oct-2017
+[2020-03-26 21:53:45,488] {logging_mixin.py:112} INFO - Message b'4': QUT Student Tax Invoice
+[2020-03-26 21:53:45,489] {logging_mixin.py:112} INFO - Raw Date: Fri, 22 Dec 2017 20:02:31 +1000
+[2020-03-26 21:53:45,490] {logging_mixin.py:112} INFO - (2017, 12, 22, 20, 2, 31, 0, 1, -1, 36000)
+[2020-03-26 21:53:45,490] {logging_mixin.py:112} INFO - Local Date: 22-Dec-2017
+[2020-03-26 21:53:45,491] {logging_mixin.py:112} INFO - QUT Student Tax Invoice,<no-reply@qut.edu.au>,22-Dec-2017
+[2020-03-26 21:53:46,586] {logging_mixin.py:112} INFO - Message b'5': RE: World Science Festival Brisbane 2018 - Volunteering - REMINDER
+[2020-03-26 21:53:46,586] {logging_mixin.py:112} INFO - Raw Date: Wed, 13 Dec 2017 03:52:21 +0000
+[2020-03-26 21:53:46,587] {logging_mixin.py:112} INFO - (2017, 12, 13, 3, 52, 21, 0, 1, -1, 0)
+[2020-03-26 21:53:46,588] {logging_mixin.py:112} INFO - Local Date: 13-Dec-2017
+[2020-03-26 21:53:46,588] {logging_mixin.py:112} INFO - RE: World Science Festival Brisbane 2018 - Volunteering - REMINDER,Andy Mullally <andy.mullally@qm.qld.gov.au>,13-Dec-2017
+[2020-03-26 21:53:47,545] {logging_mixin.py:112} INFO - Message b'6': Semester Two Events
+[2020-03-26 21:53:47,545] {logging_mixin.py:112} INFO - Raw Date: Tue, 10 Jul 2018 02:00:38 +0000
+[2020-03-26 21:53:47,546] {logging_mixin.py:112} INFO - (2018, 7, 10, 2, 0, 38, 0, 1, -1, 0)
+[2020-03-26 21:53:47,547] {logging_mixin.py:112} INFO - Local Date: 10-Jul-2018
+[2020-03-26 21:53:47,548] {logging_mixin.py:112} INFO - Semester Two Events,QUT College of Excellence <collegeofexcellence@qut.edu.au>,10-Jul-2018
+[2020-03-26 21:53:48,198] {logging_mixin.py:112} INFO - Message b'7': Shift Confirmation Email
+[2020-03-26 21:53:48,198] {logging_mixin.py:112} INFO - Raw Date: Wed, 8 Aug 2018 10:23:07 +0000
+[2020-03-26 21:53:48,198] {logging_mixin.py:112} INFO - (2018, 8, 8, 10, 23, 7, 0, 1, -1, 0)
+[2020-03-26 21:53:48,199] {logging_mixin.py:112} INFO - Local Date: 08-Aug-2018
+[2020-03-26 21:53:48,199] {logging_mixin.py:112} INFO - Shift Confirmation Email,The Prince Charles Hospital Foundation <events@thecommongood.org.au>,08-Aug-2018
+[2020-03-26 21:53:48,806] {logging_mixin.py:112} INFO - Message b'8': Re: Work experience application
+[2020-03-26 21:53:48,806] {logging_mixin.py:112} INFO - Raw Date: Wed, 26 Sep 2018 09:04:21 +1000
+[2020-03-26 21:53:48,807] {logging_mixin.py:112} INFO - (2018, 9, 26, 9, 4, 21, 0, 1, -1, 36000)
+[2020-03-26 21:53:48,807] {logging_mixin.py:112} INFO - Local Date: 26-Sep-2018
+[2020-03-26 21:53:48,808] {logging_mixin.py:112} INFO - Re: Work experience application,Brittany Bennett <brittany@codeheroes.com.au>,26-Sep-2018
+[2020-03-26 21:53:50,039] {logging_mixin.py:112} INFO - Message b'9': [VNCR Christmas School] Announcement - lessons and discussions (thông báo link học tập)
+[2020-03-26 21:53:50,039] {logging_mixin.py:112} INFO - Raw Date: Fri, 28 Dec 2018 10:30:24 +0000
+[2020-03-26 21:53:50,040] {logging_mixin.py:112} INFO - (2018, 12, 28, 10, 30, 24, 0, 1, -1, 0)
+[2020-03-26 21:53:50,040] {logging_mixin.py:112} INFO - Local Date: 28-Dec-2018
+[2020-03-26 21:53:50,040] {logging_mixin.py:112} INFO - [VNCR Christmas School] Announcement - lessons and discussions (thông báo link học tập),Control & Robotics Group <vncr.group@gmail.com>,28-Dec-2018
+[2020-03-26 21:53:50,889] {logging_mixin.py:112} INFO - Message b'10': SURPRISE! Here's a perkalicious gift to celebrate your birthday Harry 🎂
+[2020-03-26 21:53:50,890] {logging_mixin.py:112} INFO - Raw Date: Mon, 31 Dec 2018 17:57:06 -0600
+[2020-03-26 21:53:50,890] {logging_mixin.py:112} INFO - (2018, 12, 31, 17, 57, 6, 0, 1, -1, -21600)
+[2020-03-26 21:53:50,891] {logging_mixin.py:112} INFO - Local Date: 01-Jan-2019
+[2020-03-26 21:53:50,892] {logging_mixin.py:112} INFO - SURPRISE! Here's a perkalicious gift to celebrate your birthday Harry 🎂,"Perks by CottonOn & Co." <news@e.cottonon.com>,01-Jan-2019
+[2020-03-26 21:53:53,097] {logging_mixin.py:112} INFO - Message b'11': QUT OZ EX - Participant Confirmation
+[2020-03-26 21:53:53,097] {logging_mixin.py:112} INFO - Raw Date: Wed, 1 May 2019 00:05:15 +0000
+[2020-03-26 21:53:53,098] {logging_mixin.py:112} INFO - (2019, 5, 1, 0, 5, 15, 0, 1, -1, 0)
+[2020-03-26 21:53:53,099] {logging_mixin.py:112} INFO - Local Date: 01-May-2019
+[2020-03-26 21:53:53,099] {logging_mixin.py:112} INFO - QUT OZ EX - Participant Confirmation ,QUT OZ EX <ozex@qut.edu.au>,01-May-2019
+[2020-03-26 21:54:03,832] {logging_mixin.py:112} INFO - Message b'12': QUT Oz-Ex Program Project Brief
+[2020-03-26 21:54:03,833] {logging_mixin.py:112} INFO - Raw Date: Tue, 11 Jun 2019 01:39:18 +0000
+[2020-03-26 21:54:03,834] {logging_mixin.py:112} INFO - (2019, 6, 11, 1, 39, 18, 0, 1, -1, 0)
+[2020-03-26 21:54:03,835] {logging_mixin.py:112} INFO - Local Date: 11-Jun-2019
+[2020-03-26 21:54:03,835] {logging_mixin.py:112} INFO - QUT Oz-Ex Program Project Brief,Emily Stannard <Emily.Stannard@readygrad.com.au>,11-Jun-2019
+[2020-03-26 21:54:05,187] {logging_mixin.py:112} INFO - Message b'13': RE: REMINDER: OZ EX Preparation Seminar
+[2020-03-26 21:54:05,188] {logging_mixin.py:112} INFO - Raw Date: Thu, 20 Jun 2019 03:15:02 +0000
+[2020-03-26 21:54:05,188] {logging_mixin.py:112} INFO - (2019, 6, 20, 3, 15, 2, 0, 1, -1, 0)
+[2020-03-26 21:54:05,189] {logging_mixin.py:112} INFO - Local Date: 20-Jun-2019
+[2020-03-26 21:54:05,190] {logging_mixin.py:112} INFO - RE: REMINDER: OZ EX Preparation Seminar ,QUT OZ EX <ozex@qut.edu.au>,20-Jun-2019
+[2020-03-26 21:54:06,114] {logging_mixin.py:112} INFO - Message b'14': mel plan
+[2020-03-26 21:54:06,114] {logging_mixin.py:112} INFO - Raw Date: Sat, 22 Jun 2019 17:27:50 +1000
+[2020-03-26 21:54:06,115] {logging_mixin.py:112} INFO - (2019, 6, 22, 17, 27, 50, 0, 1, -1, 36000)
+[2020-03-26 21:54:06,115] {logging_mixin.py:112} INFO - Local Date: 22-Jun-2019
+[2020-03-26 21:54:06,116] {logging_mixin.py:112} INFO - mel plan,Thu Anh Nguyen <sunshine14499@gmail.com>,22-Jun-2019
+[2020-03-26 21:54:13,527] {logging_mixin.py:112} INFO - Message b'15': Fwd: Successful application - 9/31 Upper Clifton Terrace Red Hill
+[2020-03-26 21:54:13,527] {logging_mixin.py:112} INFO - Raw Date: Mon, 6 Jan 2020 18:06:55 +0700
+[2020-03-26 21:54:13,527] {logging_mixin.py:112} INFO - (2020, 1, 6, 18, 6, 55, 0, 1, -1, 25200)
+[2020-03-26 21:54:13,528] {logging_mixin.py:112} INFO - Local Date: 06-Jan-2020
+[2020-03-26 21:54:13,528] {logging_mixin.py:112} INFO - Fwd: Successful application - 9/31 Upper Clifton Terrace Red Hill,Annie Nguyen <annieng0499@gmail.com>,06-Jan-2020
+[2020-03-26 21:54:14,436] {logging_mixin.py:112} INFO - Message b'16': Fwd: Inspection @31 Upper Clifton Terrace (studio/unit9)
+[2020-03-26 21:54:14,441] {logging_mixin.py:112} INFO - Raw Date: Wed, 25 Dec 2019 15:59:57 +0700
+[2020-03-26 21:54:14,441] {logging_mixin.py:112} INFO - (2019, 12, 25, 15, 59, 57, 0, 1, -1, 25200)
+[2020-03-26 21:54:14,442] {logging_mixin.py:112} INFO - Local Date: 25-Dec-2019
+[2020-03-26 21:54:14,443] {logging_mixin.py:112} INFO - Fwd: Inspection @31 Upper Clifton Terrace (studio/unit9),Annie Nguyen <annieng0499@gmail.com>,25-Dec-2019
+[2020-03-26 21:54:17,083] {logging_mixin.py:112} INFO - Message b'17': Payment Agreement Confirmation
+[2020-03-26 21:54:17,084] {logging_mixin.py:112} INFO - Raw Date: Mon, 2 Mar 2020 07:33:37 +0000
+[2020-03-26 21:54:17,084] {logging_mixin.py:112} INFO - (2020, 3, 2, 7, 33, 37, 0, 1, -1, 0)
+[2020-03-26 21:54:17,085] {logging_mixin.py:112} INFO - Local Date: 02-Mar-2020
+[2020-03-26 21:54:17,085] {logging_mixin.py:112} INFO - Payment Agreement Confirmation,CustomerService@debitsuccess.com.au,02-Mar-2020
+[2020-03-26 21:54:18,782] {logging_mixin.py:112} INFO - Message b'18': Reservation confirmed for Parramatta Park
+[2020-03-26 21:54:18,783] {logging_mixin.py:112} INFO - Raw Date: Thu, 05 Mar 2020 23:08:23 +0000 (UTC)
+[2020-03-26 21:54:18,783] {logging_mixin.py:112} INFO - (2020, 3, 5, 23, 8, 23, 0, 1, -1, 0)
+[2020-03-26 21:54:18,784] {logging_mixin.py:112} INFO - Local Date: 06-Mar-2020
+[2020-03-26 21:54:18,785] {logging_mixin.py:112} INFO - Reservation confirmed for Parramatta Park,"Airbnb" <automated@airbnb.com>,06-Mar-2020
+[2020-03-26 21:54:26,865] {logging_mixin.py:112} INFO - Message b'19': Fwd: Your booking is confirmed - GYG7VMX5NH4M
+[2020-03-26 21:54:26,867] {logging_mixin.py:112} INFO - Raw Date: Sat, 7 Mar 2020 18:58:37 +1000
+[2020-03-26 21:54:26,867] {logging_mixin.py:112} INFO - (2020, 3, 7, 18, 58, 37, 0, 1, -1, 36000)
+[2020-03-26 21:54:26,868] {logging_mixin.py:112} INFO - Local Date: 07-Mar-2020
+[2020-03-26 21:54:26,869] {logging_mixin.py:112} INFO - Fwd: Your booking is confirmed - GYG7VMX5NH4M,Tran Quang Huy <quanghuy.qut@gmail.com>,07-Mar-2020
+[2020-03-26 21:54:28,102] {logging_mixin.py:112} INFO - Message b'20': Airbnb payment update
+[2020-03-26 21:54:28,103] {logging_mixin.py:112} INFO - Raw Date: Sat, 21 Mar 2020 09:04:25 +0000 (UTC)
+[2020-03-26 21:54:28,103] {logging_mixin.py:112} INFO - (2020, 3, 21, 9, 4, 25, 0, 1, -1, 0)
+[2020-03-26 21:54:28,104] {logging_mixin.py:112} INFO - Local Date: 21-Mar-2020
+[2020-03-26 21:54:28,104] {logging_mixin.py:112} INFO - Airbnb payment update,"Airbnb" <automated@airbnb.com>,21-Mar-2020
+[2020-03-26 21:54:29,360] {logging_mixin.py:112} INFO - Message b'21': Your 2020-04-14 reservation was canceled
+[2020-03-26 21:54:29,361] {logging_mixin.py:112} INFO - Raw Date: Sat, 21 Mar 2020 09:03:48 +0000 (UTC)
+[2020-03-26 21:54:29,361] {logging_mixin.py:112} INFO - (2020, 3, 21, 9, 3, 48, 0, 1, -1, 0)
+[2020-03-26 21:54:29,362] {logging_mixin.py:112} INFO - Local Date: 21-Mar-2020
+[2020-03-26 21:54:29,363] {logging_mixin.py:112} INFO - Your 2020-04-14 reservation was canceled,"Airbnb" <automated@airbnb.com>,21-Mar-2020
+[2020-03-26 21:54:35,069] {logging_mixin.py:112} INFO - Message b'22': Airbnb Reservation Canceled
+[2020-03-26 21:54:35,069] {logging_mixin.py:112} INFO - Raw Date: Sat, 21 Mar 2020 09:03:49 +0000 (UTC)
+[2020-03-26 21:54:35,070] {logging_mixin.py:112} INFO - (2020, 3, 21, 9, 3, 49, 0, 1, -1, 0)
+[2020-03-26 21:54:35,071] {logging_mixin.py:112} INFO - Local Date: 21-Mar-2020
+[2020-03-26 21:54:35,071] {logging_mixin.py:112} INFO - Airbnb Reservation Canceled,"Airbnb" <automated@airbnb.com>,21-Mar-2020
+[2020-03-26 21:54:35,088] {taskinstance.py:1128} ERROR - [Errno 30] Read-only file system: 'email_harry_26_Mar_2020.csv'
+Traceback (most recent call last):
+  File "/Users/tranquanghuy/email_analytics_dashoard/email_env/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 966, in _run_raw_task
+    result = task_copy.execute(context=context)
+  File "/Users/tranquanghuy/email_analytics_dashoard/email_env/lib/python3.6/site-packages/airflow/operators/python_operator.py", line 113, in execute
+    return_value = self.execute_callable()
+  File "/Users/tranquanghuy/email_analytics_dashoard/email_env/lib/python3.6/site-packages/airflow/operators/python_operator.py", line 118, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/Users/tranquanghuy/email_analytics_dashoard/airflow_dir/dags/upload_to_S3.py", line 127, in extract_email
+    process_mailbox(M,save_file)
+  File "/Users/tranquanghuy/email_analytics_dashoard/airflow_dir/dags/upload_to_S3.py", line 98, in process_mailbox
+    df.to_csv(save_file)
+  File "/Users/tranquanghuy/email_analytics_dashoard/email_env/lib/python3.6/site-packages/pandas/core/generic.py", line 3228, in to_csv
+    formatter.save()
+  File "/Users/tranquanghuy/email_analytics_dashoard/email_env/lib/python3.6/site-packages/pandas/io/formats/csvs.py", line 183, in save
+    compression=self.compression,
+  File "/Users/tranquanghuy/email_analytics_dashoard/email_env/lib/python3.6/site-packages/pandas/io/common.py", line 399, in _get_handle
+    f = open(path_or_buf, mode, encoding=encoding, newline="")
+OSError: [Errno 30] Read-only file system: 'email_harry_26_Mar_2020.csv'
+[2020-03-26 21:54:35,094] {taskinstance.py:1185} INFO - Marking task as FAILED.dag_id=upload_s3, task_id=extract_mail, execution_date=20200101T171500, start_date=20200326T115334, end_date=20200326T115435
+[2020-03-26 21:54:39,644] {logging_mixin.py:112} INFO - [2020-03-26 21:54:39,643] {local_task_job.py:103} INFO - Task exited with return code 1

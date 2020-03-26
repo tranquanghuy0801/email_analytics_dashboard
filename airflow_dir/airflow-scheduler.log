@@ -1,8 +1,0 @@
-2020-03-25 23:45:46,273 INFO - Starting the scheduler
-2020-03-25 23:45:46,275 INFO - Running execute loop for -1 seconds
-2020-03-25 23:45:46,277 INFO - Processing each file at most -1 times
-2020-03-25 23:45:46,278 INFO - Searching for files in [1m/Users/tranquanghuy/email_analytics_dashoard/airflow_dir/dags[0m
-2020-03-25 23:45:46,280 INFO - There are 1 files in [1m/Users/tranquanghuy/email_analytics_dashoard/airflow_dir/dags[0m
-2020-03-25 23:45:46,281 INFO - Resetting orphaned tasks for active dag runs
-2020-03-25 23:45:46,297 INFO - Launched DagFileProcessorManager with pid: 60144
-2020-03-25 23:45:46,307 INFO - Configured default timezone <Timezone [UTC]>

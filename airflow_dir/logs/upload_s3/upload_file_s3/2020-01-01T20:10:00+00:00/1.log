@@ -1,0 +1,16 @@
+[2020-03-26 21:59:10,006] {taskinstance.py:655} INFO - Dependencies all met for <TaskInstance: upload_s3.upload_file_s3 2020-01-01T20:10:00+00:00 [queued]>
+[2020-03-26 21:59:10,030] {taskinstance.py:655} INFO - Dependencies all met for <TaskInstance: upload_s3.upload_file_s3 2020-01-01T20:10:00+00:00 [queued]>
+[2020-03-26 21:59:10,030] {taskinstance.py:866} INFO - 
+--------------------------------------------------------------------------------
+[2020-03-26 21:59:10,030] {taskinstance.py:867} INFO - Starting attempt 1 of 1
+[2020-03-26 21:59:10,030] {taskinstance.py:868} INFO - 
+--------------------------------------------------------------------------------
+[2020-03-26 21:59:10,049] {taskinstance.py:887} INFO - Executing <Task(PythonOperator): upload_file_s3> on 2020-01-01T20:10:00+00:00
+[2020-03-26 21:59:10,053] {standard_task_runner.py:53} INFO - Started process 56016 to run task
+[2020-03-26 21:59:10,205] {logging_mixin.py:112} INFO - Running %s on host %s <TaskInstance: upload_s3.upload_file_s3 2020-01-01T20:10:00+00:00 [running]> 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa
+[2020-03-26 21:59:10,321] {logging_mixin.py:112} INFO - [2020-03-26 21:59:10,320] {credentials.py:1196} INFO - Found credentials in shared credentials file: ~/.aws/credentials
+[2020-03-26 21:59:33,313] {logging_mixin.py:112} INFO - An error occurred (400) when calling the HeadObject operation: Bad Request
+[2020-03-26 21:59:33,319] {logging_mixin.py:112} INFO - Object exists
+[2020-03-26 21:59:33,326] {python_operator.py:114} INFO - Done. Returned value was: None
+[2020-03-26 21:59:33,422] {taskinstance.py:1048} INFO - Marking task as SUCCESS.dag_id=upload_s3, task_id=upload_file_s3, execution_date=20200101T201000, start_date=20200326T115910, end_date=20200326T115933
+[2020-03-26 21:59:35,228] {logging_mixin.py:112} INFO - [2020-03-26 21:59:35,226] {local_task_job.py:103} INFO - Task exited with return code 0
